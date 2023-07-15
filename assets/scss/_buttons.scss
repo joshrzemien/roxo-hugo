@@ -1,5 +1,6 @@
 .btn{
   font-family: $secondary-font;
+  font-weight: 700;
   border: none;
   color: $white !important;
   padding: 20px 45px;
@@ -61,17 +62,17 @@
 }
 
 .btn-primary{
-  background: $primary-color;
+  background-color: darken($primary-color, 20%);
   color: $white;
   &:hover{
-    background: darken($color: $primary-color, $amount: 10);
+    background: darken($primary-color, 20%);
   }
 }
 
 .btn-secondary{
-  background: $secondary-color;
+  background-color: darken($secondary-color, 20%);
   color: $white;
   &:hover{
-    background: darken($color: $secondary-color, $amount: 10);
+    background: darken($secondary-color, 20%);
   }
 }

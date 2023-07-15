@@ -47,5 +47,18 @@
         }
       }
     }
+    &-blurb{
+      position: absolute;
+      left: 185px;
+      top: 85px;
+      max-width: 200px;
+      transform: translateY(-50%);
+      @include tablet{
+        position:static;
+        transform: none;
+        padding-top: 10px;
+        text-align: center;
+      }
+    }
   }
 }
