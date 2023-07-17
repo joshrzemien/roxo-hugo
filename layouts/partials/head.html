@@ -2,9 +2,6 @@
   {{ template "_internal/google_analytics.html" . }}
   <meta charset="utf-8" />
   <title>{{ .Title }}</title>
-  {{ with .Description }}
-  <meta name="description" content="{{ . }}">
-  {{ end }}
   {{ with .Site.Params.description }}
   <meta name="description" content="{{ . }}">
   {{ end }}
