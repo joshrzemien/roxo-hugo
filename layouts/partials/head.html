@@ -5,6 +5,9 @@
   {{ with .Description }}
   <meta name="description" content="{{ . }}">
   {{ end }}
+  {{ with .Site.Params.description }}
+  <meta name="description" content="{{ . }}">
+  {{ end }}
   
   {{ range .Params.tags }}
   <meta property="article:tag" content="{{ . }}">
