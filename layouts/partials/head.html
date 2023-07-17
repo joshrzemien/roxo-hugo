@@ -2,6 +2,13 @@
   {{ template "_internal/google_analytics.html" . }}
   <meta charset="utf-8" />
   <title>{{ .Title }}</title>
+  {{ with .Description }}
+  <meta name="description" content="{{ . }}">
+  {{ end }}
+  
+  {{ range .Params.tags }}
+  <meta property="article:tag" content="{{ . }}">
+  {{ end }}
 
   {{ "<!-- mobile responsive meta -->" | safeHTML }}
   <meta name="viewport" content="width=device-width, initial-scale=1" />
