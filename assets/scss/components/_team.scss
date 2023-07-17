@@ -5,8 +5,13 @@
     padding: 65px 30px 30px;
     margin: 50px 0 30px;
     position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
     @include tablet{
       text-align: center;
+      flex-direction: column;
     }
     &-image{
       position: absolute;
@@ -48,11 +53,9 @@
       }
     }
     &-blurb{
-      position: absolute;
-      left: 185px;
-      top: 85px;
+      transform: translateY(-40%);
+      margin-left: 20px;
       max-width: 200px;
-      transform: translateY(-50%);
       @include tablet{
         position:static;
         transform: none;
