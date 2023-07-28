@@ -1,0 +1,38 @@
+{{ with .Site.Data.more }}
+  {{ if .enable }}
+  <section class="more-about" id="more-about">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          {{ with .first_title }}
+          <div class="section-title">
+            <h2>{{ . }}</h2>
+          </div>
+          {{ end }}
+        </div>
+        <div class="col-md-6">
+          <ul class="site-areas-list">
+            {{ range .areas_serviced }}
+            <li>{{ . }}</li>
+            {{ end }}
+          </ul>
+        </div>
+        <div class="col-md-6">
+          {{ with .second_title }}
+          <div class="section-title">
+            <h2>{{ . }}</h2>
+          </div>
+          {{ end }}
+        </div>
+        <div class="col-md-6">
+          <ul class="site-payments-list">
+            {{ range .payments_accepted }}
+            <li>{{ . }}</li>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+{{ end }}

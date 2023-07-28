@@ -1,0 +1,18 @@
+.more-about {
+  background: $gray;
+  padding: 100px 0;
+  overflow: hidden;
+  margin-bottom: -150px;
+
+  .col-md-6 {
+    margin-bottom: 40px;
+  }
+
+  .site-areas-list,
+  .site-payments-list {
+    li {
+      margin-bottom: 10px;
+      font-size: larger;
+    }
+  }
+}

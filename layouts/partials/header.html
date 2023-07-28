@@ -47,6 +47,11 @@
           <img src="{{ "images/facebook.webp" | absURL }}" alt="facebook" />
         </a>
       </div>
+      <div class="phone-number">
+        <a href="tel:{{ .Site.Params.footer.contactInfo.phone }}">
+          <span>Call us! {{ .Site.Params.footer.contactInfo.phone }}</span>
+        </a>
+      </div>
     </div>
   </div>
 </nav>
