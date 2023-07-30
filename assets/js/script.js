@@ -1,6 +1,6 @@
 $(document).ready(function() {
   "use strict";
-  // Scroll to top 
+  // Scroll to top
   $("a[href='#top']").click(function() {
     $("html, body").animate({ scrollTop: 0 }, "slow");
     return false;
